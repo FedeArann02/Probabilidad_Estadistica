@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Drawing.Printing;
 using System.Linq;
 using System.Text;
@@ -66,17 +67,22 @@ namespace ProbabilidadEstadistica
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
-            if (dgvAgrupados.Visible == false)
+            try
             {
-                Desagrupados();
+                if (dgvAgrupados.Visible == false)
+                {
+                    Desagrupados();
+                }
+                else
+                {
+                    Agrupados();
+                }
+
             }
-            else
+            catch(Exception)
             {
-                Agrupados();
+                MessageBox.Show("Error en los datos ingresados", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            chartDatos.Visible = true;
-            cmbTipoGrafico.Visible = true;
-            lblTipoGrafico.Visible = true;
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -115,6 +121,16 @@ namespace ProbabilidadEstadistica
             if (chartDatos.Series.Count > 0)
             {
                 chartDatos.Series[0].ChartType = chartTypeSeleccionado;
+                if (chartTypeSeleccionado == SeriesChartType.Doughnut  || chartTypeSeleccionado == SeriesChartType.Pie || chartTypeSeleccionado == SeriesChartType.Pyramid || chartTypeSeleccionado == SeriesChartType.Funnel)
+                {
+                    chartDatos.Palette = ChartColorPalette.Excel;
+                }
+                else
+                {
+                    Color[] colors = {Color.Crimson, Color.IndianRed };
+                    chartDatos.Palette = ChartColorPalette.None;
+                    chartDatos.PaletteCustomColors = colors;
+                }
             }
         }
 
@@ -179,7 +195,16 @@ namespace ProbabilidadEstadistica
             // Mostrar resultados
             lblEstadisticas.Visible = true;
             lblResultados.Visible = true;
-            lblEstadisticas.Text = $"◦ Moda: {moda}\n◦ Mediana: {medianaValor}\n◦ Desviación Estándar: {decimal.Round(decimal.Parse(desviacionEstandar.ToString()), 2)}\n◦ Coeficiente de Variación: {decimal.Round(decimal.Parse(coeficienteVariacion.ToString()), 2)}%";
+
+            if (decimal.TryParse(desviacionEstandar.ToString(), out decimal desvEst) || decimal.TryParse(coeficienteVariacion.ToString(), out decimal coefVar))
+            {
+                lblEstadisticas.Text = $"◦ Moda: {moda}\n◦ Mediana: {medianaValor}\n◦ Desviación Estándar: {decimal.Round(decimal.Parse(desviacionEstandar.ToString()), 2)}\n◦ Coeficiente de Variación: {decimal.Round(decimal.Parse(coeficienteVariacion.ToString()), 2)}%";
+            }
+            else
+            {
+                lblEstadisticas.Text = $"◦ Moda: {moda}\n◦ Mediana: {medianaValor}\n◦ Desviación Estándar: {desviacionEstandar}\n◦ Coeficiente de Variación: {coeficienteVariacion}";
+            }
+
 
 
             // Configurar el Chart para mostrar frecuencias
@@ -240,7 +265,16 @@ namespace ProbabilidadEstadistica
             // Mostrar resultados en etiquetas
             lblEstadisticas.Visible = true;
             lblResultados.Visible = true;
-            lblEstadisticas.Text = $"◦ Moda: {moda}\n◦ Mediana: {mediana}\n◦ Desviación Estándar: {decimal.Round(decimal.Parse(desviacionEstandar.ToString()), 2)}\n◦ Coeficiente de Variación: {decimal.Round(decimal.Parse(coeficienteVariacion.ToString()), 2)}%";
+
+            if (decimal.TryParse(desviacionEstandar.ToString(), out decimal desvEst) || decimal.TryParse(coeficienteVariacion.ToString(), out decimal coefVar))
+            {
+                lblEstadisticas.Text = $"◦ Moda: {moda}\n◦ Mediana: {mediana}\n◦ Desviación Estándar: {decimal.Round(decimal.Parse(desviacionEstandar.ToString()), 2)}\n◦ Coeficiente de Variación: {decimal.Round(decimal.Parse(coeficienteVariacion.ToString()), 2)}%";
+            }
+            else
+            {
+                lblEstadisticas.Text = $"◦ Moda: {moda}\n◦ Mediana: {mediana}\n◦ Desviación Estándar: {desviacionEstandar}\n◦ Coeficiente de Variación: {coeficienteVariacion}%";
+            }
+
 
             // Configurar el Chart para mostrar las frecuencias de los datos desagrupados
 
@@ -333,6 +367,14 @@ namespace ProbabilidadEstadistica
             dgvDesagrupados.Visible = false;
             lblAgrupados.Visible = true;
             lblDesagrupados.Visible = false;
+            btnAgregar.Enabled = true;
+            btnCalcular.Enabled = true;
+            btnLimpiar.Enabled = true;
+            txtFrecuencias.Enabled = true;
+            txtValor.Enabled = true;
+            lblValor.Enabled = true;
+            lblFrecuencia.Enabled = true;
+            
         }
 
         private void habilitarDesagrupados()
@@ -345,6 +387,13 @@ namespace ProbabilidadEstadistica
             dgvDesagrupados.Visible = true;
             lblAgrupados.Visible = false;
             lblDesagrupados.Visible = true;
+            btnAgregar.Enabled = true;
+            btnCalcular.Enabled = true;
+            btnLimpiar.Enabled = true;
+            txtFrecuencias.Enabled = true;
+            txtValor.Enabled = true;
+            lblValor.Enabled = true;
+            lblFrecuencia.Enabled = true;
         }
 
         private void Agrupados()
@@ -352,6 +401,9 @@ namespace ProbabilidadEstadistica
             if (dgvAgrupados.Rows.Count > 0)
             {
                 CalcularEstadisticasAgrupadas();
+                chartDatos.Visible = true;
+                cmbTipoGrafico.Visible = true;
+                lblTipoGrafico.Visible = true;
             }
             else
             {
@@ -364,6 +416,9 @@ namespace ProbabilidadEstadistica
             if (dgvDesagrupados.Rows.Count > 0)
             {
                 CalcularEstadisticasDesagrupados();
+                chartDatos.Visible = true;
+                cmbTipoGrafico.Visible = true;
+                lblTipoGrafico.Visible = true;
             }
             else
             {
@@ -374,8 +429,6 @@ namespace ProbabilidadEstadistica
         private void limpiarAgrupados()
         {
             dgvAgrupados.Rows.Clear();
-            lblAgrupados.Visible = false;
-            dgvAgrupados.Visible = false;
             txtValor.Text = "";
             txtFrecuencias.Text = "";
             chartDatos.Visible = false;
@@ -383,21 +436,17 @@ namespace ProbabilidadEstadistica
             lblTipoGrafico.Visible = false;
             lblEstadisticas.Visible = false;
             lblResultados.Visible = false;
-            lblDatosMensaje.Visible = true;
         }
 
         private void limpiarDesagrupados()
         {
             dgvDesagrupados.Rows.Clear();
-            lblDesagrupados.Visible = false;
-            dgvDesagrupados.Visible = false;
             txtValor.Text = "";
             chartDatos.Visible = false;
             cmbTipoGrafico.Visible = false;
             lblTipoGrafico.Visible = false;
             lblEstadisticas.Visible = false;
             lblResultados.Visible = false;
-            lblDatosMensaje.Visible = true;
         }
 
         #endregion
