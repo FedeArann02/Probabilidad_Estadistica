@@ -1,0 +1,10 @@
+C:\Users\Leo\source\repos\ProbabilidadEstadistica\ProbabilidadEstadistica\bin\Debug\ProbabilidadEstadistica.exe.config
+C:\Users\Leo\source\repos\ProbabilidadEstadistica\ProbabilidadEstadistica\bin\Debug\ProbabilidadEstadistica.exe
+C:\Users\Leo\source\repos\ProbabilidadEstadistica\ProbabilidadEstadistica\bin\Debug\ProbabilidadEstadistica.pdb
+C:\Users\Leo\source\repos\ProbabilidadEstadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.csproj.AssemblyReference.cache
+C:\Users\Leo\source\repos\ProbabilidadEstadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.frmPrincipal.resources
+C:\Users\Leo\source\repos\ProbabilidadEstadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.Properties.Resources.resources
+C:\Users\Leo\source\repos\ProbabilidadEstadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.csproj.GenerateResource.cache
+C:\Users\Leo\source\repos\ProbabilidadEstadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.csproj.CoreCompileInputs.cache
+C:\Users\Leo\source\repos\ProbabilidadEstadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.exe
+C:\Users\Leo\source\repos\ProbabilidadEstadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.pdb
