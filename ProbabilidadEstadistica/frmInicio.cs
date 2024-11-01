@@ -19,6 +19,10 @@ namespace ProbabilidadEstadistica
         {
             InitializeComponent();
             cmbTipoGrafico.DataSource = Enum.GetValues(typeof(SeriesChartType));
+            if (maxAltoPantalla < 900)
+            {
+                modificarTamaño();
+            }
         }
 
         #region EVENTOS
@@ -137,6 +141,17 @@ namespace ProbabilidadEstadistica
         #endregion
 
         #region FUNCIONES
+
+        private void modificarTamaño()
+        {
+            this.Height = maxAltoPantalla;
+            dgvAgrupados.Height = 90;
+            dgvDesagrupados.Height = 90;
+            chartDatos.Location = new Point(26, 454);
+            cmbTipoGrafico.Location = new Point(26, 427);
+            lblTipoGrafico.Location = new Point(22, 403);
+        }
+
         private void CalcularEstadisticasAgrupadas()
         {
 
@@ -450,6 +465,8 @@ namespace ProbabilidadEstadistica
         }
 
         #endregion
+
+        int maxAltoPantalla = Screen.PrimaryScreen.Bounds.Height;
 
     }
 }

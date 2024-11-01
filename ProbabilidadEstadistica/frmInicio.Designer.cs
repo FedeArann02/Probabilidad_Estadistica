@@ -453,7 +453,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
-            this.ClientSize = new System.Drawing.Size(900, 821);
+            this.ClientSize = new System.Drawing.Size(900, 788);
             this.Controls.Add(this.lblTipoGrafico);
             this.Controls.Add(this.cmbTipoGrafico);
             this.Controls.Add(this.btnCerrar);
@@ -465,7 +465,6 @@
             this.Controls.Add(this.lblAgrupados);
             this.Controls.Add(this.lblDesagrupados);
             this.Controls.Add(this.lblResultados);
-            this.Controls.Add(this.lblEstadisticas);
             this.Controls.Add(this.dgvDesagrupados);
             this.Controls.Add(this.chartDatos);
             this.Controls.Add(this.lblProbEst);
@@ -474,6 +473,7 @@
             this.Controls.Add(this.txtFrecuencias);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.dgvAgrupados);
+            this.Controls.Add(this.lblEstadisticas);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
