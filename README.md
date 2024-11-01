@@ -25,4 +25,4 @@ Este proyecto es una aplicación de Windows Forms que permite calcular y visuali
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tu_usuario/proyecto-probabilidad-estadisticas.git
+   git clone https://github.com/FedeArann02/Probabilidad_Estadistica
