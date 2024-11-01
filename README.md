@@ -14,6 +14,7 @@ Este proyecto es una aplicación de Windows Forms que permite calcular y visuali
   - Coeficiente de variación
 - **Visualización de datos**: Representa los datos en gráficos de diferentes tipos (columnas, líneas, etc.) para una mejor comprensión.
 - **Interfaz intuitiva**: Diseñada con Windows Forms, es fácil de usar y accesible.
+- Formulario adaptado para pantallas con resolucion menor a 900p de alto
 
 ## Requisitos
 
