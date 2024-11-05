@@ -18,3 +18,13 @@ C:\Users\thoma\OneDrive\Desktop\Probabilidad_Estadistica\ProbabilidadEstadistica
 C:\Users\thoma\OneDrive\Desktop\Probabilidad_Estadistica\ProbabilidadEstadistica\bin\Debug\ProbabilidadEstadistica.exe.config
 C:\Users\thoma\OneDrive\Desktop\Probabilidad_Estadistica\ProbabilidadEstadistica\bin\Debug\ProbabilidadEstadistica.exe
 C:\Users\thoma\OneDrive\Desktop\Probabilidad_Estadistica\ProbabilidadEstadistica\bin\Debug\ProbabilidadEstadistica.pdb
+C:\Users\Leo\source\repos\Probabilidad_Estadistica\ProbabilidadEstadistica\bin\Debug\ProbabilidadEstadistica.exe.config
+C:\Users\Leo\source\repos\Probabilidad_Estadistica\ProbabilidadEstadistica\bin\Debug\ProbabilidadEstadistica.exe
+C:\Users\Leo\source\repos\Probabilidad_Estadistica\ProbabilidadEstadistica\bin\Debug\ProbabilidadEstadistica.pdb
+C:\Users\Leo\source\repos\Probabilidad_Estadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.csproj.AssemblyReference.cache
+C:\Users\Leo\source\repos\Probabilidad_Estadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.frmPrincipal.resources
+C:\Users\Leo\source\repos\Probabilidad_Estadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.Properties.Resources.resources
+C:\Users\Leo\source\repos\Probabilidad_Estadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.csproj.GenerateResource.cache
+C:\Users\Leo\source\repos\Probabilidad_Estadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.csproj.CoreCompileInputs.cache
+C:\Users\Leo\source\repos\Probabilidad_Estadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.exe
+C:\Users\Leo\source\repos\Probabilidad_Estadistica\ProbabilidadEstadistica\obj\Debug\ProbabilidadEstadistica.pdb

@@ -453,7 +453,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(42)))));
-            this.ClientSize = new System.Drawing.Size(900, 788);
+            this.ClientSize = new System.Drawing.Size(900, 832);
             this.Controls.Add(this.lblTipoGrafico);
             this.Controls.Add(this.cmbTipoGrafico);
             this.Controls.Add(this.btnCerrar);
