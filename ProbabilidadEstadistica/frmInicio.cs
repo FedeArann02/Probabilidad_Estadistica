@@ -296,7 +296,7 @@ namespace ProbabilidadEstadistica
             chartDatos.Series.Clear();
             chartDatos.Titles.Clear();
             chartDatos.Series.Add("Frecuencia");
-            chartDatos.Titles.Add("Frecuencias de Datos Agrupados");
+            chartDatos.Titles.Add("Frecuencias de Datos Desagrupados");
 
             // Agrupar datos y añadir frecuencias al Chart
             var frecuencias = datos.GroupBy(x => x)

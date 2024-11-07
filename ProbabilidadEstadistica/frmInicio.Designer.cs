@@ -138,7 +138,7 @@
             this.txtFrecuencias.Font = new System.Drawing.Font("Segoe UI Variable Display Semib", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFrecuencias.ForeColor = System.Drawing.Color.Black;
             this.txtFrecuencias.Location = new System.Drawing.Point(327, 194);
-            this.txtFrecuencias.MaxLength = 27;
+            this.txtFrecuencias.MaxLength = 10;
             this.txtFrecuencias.Name = "txtFrecuencias";
             this.txtFrecuencias.Size = new System.Drawing.Size(114, 24);
             this.txtFrecuencias.TabIndex = 3;

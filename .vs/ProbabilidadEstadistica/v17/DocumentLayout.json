@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\thoma\\OneDrive\\Desktop\\Probabilidad_Estadistica\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C5687F7B-84E8-47D8-A67B-F71DC0C5703A}|ProbabilidadEstadistica\\ProbabilidadEstadistica.csproj|C:\\Users\\thoma\\OneDrive\\Desktop\\Probabilidad_Estadistica\\probabilidadestadistica\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5687F7B-84E8-47D8-A67B-F71DC0C5703A}|ProbabilidadEstadistica\\ProbabilidadEstadistica.csproj|solutionrelative:probabilidadestadistica\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C5687F7B-84E8-47D8-A67B-F71DC0C5703A}|ProbabilidadEstadistica\\ProbabilidadEstadistica.csproj|c:\\users\\thoma\\onedrive\\desktop\\probabilidad_estadistica\\probabilidadestadistica\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5687F7B-84E8-47D8-A67B-F71DC0C5703A}|ProbabilidadEstadistica\\ProbabilidadEstadistica.csproj|solutionrelative:probabilidadestadistica\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5687F7B-84E8-47D8-A67B-F71DC0C5703A}|ProbabilidadEstadistica\\ProbabilidadEstadistica.csproj|C:\\Users\\thoma\\OneDrive\\Desktop\\Probabilidad_Estadistica\\probabilidadestadistica\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C5687F7B-84E8-47D8-A67B-F71DC0C5703A}|ProbabilidadEstadistica\\ProbabilidadEstadistica.csproj|solutionrelative:probabilidadestadistica\\frminicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{C5687F7B-84E8-47D8-A67B-F71DC0C5703A}|ProbabilidadEstadistica\\ProbabilidadEstadistica.csproj|c:\\users\\thoma\\onedrive\\desktop\\probabilidad_estadistica\\probabilidadestadistica\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C5687F7B-84E8-47D8-A67B-F71DC0C5703A}|ProbabilidadEstadistica\\ProbabilidadEstadistica.csproj|solutionrelative:probabilidadestadistica\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C5687F7B-84E8-47D8-A67B-F71DC0C5703A}|ProbabilidadEstadistica\\ProbabilidadEstadistica.csproj|C:\\Users\\thoma\\OneDrive\\Desktop\\Probabilidad_Estadistica\\probabilidadestadistica\\frminicio.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,20 +34,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\thoma\\OneDrive\\Desktop\\Probabilidad_Estadistica\\ProbabilidadEstadistica\\App.config",
+              "RelativeDocumentMoniker": "ProbabilidadEstadistica\\App.config",
+              "ToolTip": "C:\\Users\\thoma\\OneDrive\\Desktop\\Probabilidad_Estadistica\\ProbabilidadEstadistica\\App.config",
+              "RelativeToolTip": "ProbabilidadEstadistica\\App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-07T17:32:58.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "frmInicio.cs",
               "DocumentMoniker": "C:\\Users\\thoma\\OneDrive\\Desktop\\Probabilidad_Estadistica\\ProbabilidadEstadistica\\frmInicio.cs",
               "RelativeDocumentMoniker": "ProbabilidadEstadistica\\frmInicio.cs",
               "ToolTip": "C:\\Users\\thoma\\OneDrive\\Desktop\\Probabilidad_Estadistica\\ProbabilidadEstadistica\\frmInicio.cs",
               "RelativeToolTip": "ProbabilidadEstadistica\\frmInicio.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAawBUAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAI4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-29T03:06:39.418Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "frmInicio.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\thoma\\OneDrive\\Desktop\\Probabilidad_Estadistica\\ProbabilidadEstadistica\\frmInicio.cs",
               "RelativeDocumentMoniker": "ProbabilidadEstadistica\\frmInicio.cs",
@@ -55,7 +72,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "frmInicio.Designer.cs",
               "DocumentMoniker": "C:\\Users\\thoma\\OneDrive\\Desktop\\Probabilidad_Estadistica\\ProbabilidadEstadistica\\frmInicio.Designer.cs",
               "RelativeDocumentMoniker": "ProbabilidadEstadistica\\frmInicio.Designer.cs",
