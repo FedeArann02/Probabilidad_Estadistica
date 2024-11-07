@@ -213,11 +213,11 @@ namespace ProbabilidadEstadistica
 
             if (decimal.TryParse(desviacionEstandar.ToString(), out decimal desvEst) || decimal.TryParse(coeficienteVariacion.ToString(), out decimal coefVar))
             {
-                lblEstadisticas.Text = $"◦ Moda: {moda}\n◦ Mediana: {medianaValor}\n◦ Desviación Estándar: {decimal.Round(decimal.Parse(desviacionEstandar.ToString()), 2)}\n◦ Coeficiente de Variación: {decimal.Round(decimal.Parse(coeficienteVariacion.ToString()), 2)}%";
+                lblEstadisticas.Text = $"◦ Media: {media}\n◦ Moda: {moda}\n◦ Mediana: {medianaValor}\n◦ Desviación Estándar: {decimal.Round(decimal.Parse(desviacionEstandar.ToString()), 2)}\n◦ Coeficiente de Variación: {decimal.Round(decimal.Parse(coeficienteVariacion.ToString()), 2)}%";
             }
             else
             {
-                lblEstadisticas.Text = $"◦ Moda: {moda}\n◦ Mediana: {medianaValor}\n◦ Desviación Estándar: {desviacionEstandar}\n◦ Coeficiente de Variación: {coeficienteVariacion}";
+                lblEstadisticas.Text = $"◦ Media: {media}\n◦ Moda: {moda}\n◦ Mediana: {medianaValor}\n◦ Desviación Estándar: {desviacionEstandar}\n◦ Coeficiente de Variación: {coeficienteVariacion}";
             }
 
 
@@ -283,11 +283,11 @@ namespace ProbabilidadEstadistica
 
             if (decimal.TryParse(desviacionEstandar.ToString(), out decimal desvEst) || decimal.TryParse(coeficienteVariacion.ToString(), out decimal coefVar))
             {
-                lblEstadisticas.Text = $"◦ Moda: {moda}\n◦ Mediana: {mediana}\n◦ Desviación Estándar: {decimal.Round(decimal.Parse(desviacionEstandar.ToString()), 2)}\n◦ Coeficiente de Variación: {decimal.Round(decimal.Parse(coeficienteVariacion.ToString()), 2)}%";
+                lblEstadisticas.Text = $"◦ Media: {media}\n◦ Moda: {moda}\n◦ Mediana: {mediana}\n◦ Desviación Estándar: {decimal.Round(decimal.Parse(desviacionEstandar.ToString()), 2)}\n◦ Coeficiente de Variación: {decimal.Round(decimal.Parse(coeficienteVariacion.ToString()), 2)}%";
             }
             else
             {
-                lblEstadisticas.Text = $"◦ Moda: {moda}\n◦ Mediana: {mediana}\n◦ Desviación Estándar: {desviacionEstandar}\n◦ Coeficiente de Variación: {coeficienteVariacion}%";
+                lblEstadisticas.Text = $"◦ Media: {media}\n◦ Moda: {moda}\n◦ Mediana: {mediana}\n◦ Desviación Estándar: {desviacionEstandar}\n◦ Coeficiente de Variación: {coeficienteVariacion}%";
             }
 
 
